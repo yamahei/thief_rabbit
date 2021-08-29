@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+div#main {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100vh;
+}
+div#container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 100vw);
+  grid-template-rows: repeat(1, 100vh);
+}
+section.page {
+	display: block;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+section.page img {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+
+div#navigator {
+  position: absolute;
+  margin: 0;
+  padding: 1rem;
+  left:0;
+  bottom: 0;
+}
+div#navigator img {
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  width: 4rem;
+}
