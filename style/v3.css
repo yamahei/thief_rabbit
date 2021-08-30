@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+div#main {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+div#guide {
+  position: fixed;
+  margin: 0;
+  padding: 1rem;
+  left:0;
+  bottom: 0;
+}
+div#guide img {
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  width: 4rem;
+}
+
+div#navigator {
+  position: fixed;
+  margin: 0;
+  padding: 1rem;
+  right:0;
+  top: 0;
+}
+/**
+ * CSSでスクロールスナップ(scroll-snap)の実装方法【デモ有】
+ * https://kinocolog.com/css_scroll_snap/
+ */
+ div#container {
+  /* 以下の設定は必須 */
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  overflow-x: scroll;
+  display: flex;
+  -webkit-overflow-scrolling: touch; /* スマホ対応のため必須 */
+  overflow-scrolling: touch; /* スマホ対応のため必須 *
+
+  /* 以下デモ用のデザイン */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+div#container > section.page{
+  /* 以下の設定は必須 */
+  scroll-snap-align: center;
+  width: 100vw;
+  height: 100vh;
+  flex: none;
+
+  /* 以下デモ用のデザイン */
+  margin: 0;
+  padding: 0;
+
+}
+
+div#container > section.page > img {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}

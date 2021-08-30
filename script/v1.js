@@ -110,13 +110,13 @@ $(function(){
 
     let show = true;
     counter = 0;
-    const $navigator = $("#navigator");
+    const $guide = $("#guide");
     const id = setInterval(function(){
         show = !show;
         if(show){
-            $navigator.show();
+            $guide.show();
         }else{
-            $navigator.hide();
+            $guide.hide();
         }
         if(counter++ > 4 && !show){
             clearInterval(id);

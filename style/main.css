@@ -34,16 +34,24 @@ section.page img {
   object-fit: contain;
 }
 
-div#navigator {
+div#guide {
   position: absolute;
   margin: 0;
   padding: 1rem;
   left:0;
   bottom: 0;
 }
-div#navigator img {
+div#guide img {
   margin: 0;
   padding: 0;
   object-fit: contain;
   width: 4rem;
+}
+
+div#navigator {
+  position: fixed;
+  margin: 0;
+  padding: 1rem;
+  right:0;
+  top: 0;
 }
