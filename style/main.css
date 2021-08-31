@@ -47,11 +47,3 @@ div#guide img {
   object-fit: contain;
   width: 4rem;
 }
-
-div#navigator {
-  position: fixed;
-  margin: 0;
-  padding: 1rem;
-  right:0;
-  top: 0;
-}

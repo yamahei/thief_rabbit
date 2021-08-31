@@ -27,13 +27,7 @@ div#guide img {
   width: 4rem;
 }
 
-div#navigator {
-  position: fixed;
-  margin: 0;
-  padding: 1rem;
-  right:0;
-  top: 0;
-}
+
 /**
  * CSSでスクロールスナップ(scroll-snap)の実装方法【デモ有】
  * https://kinocolog.com/css_scroll_snap/
