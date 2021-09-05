@@ -46,18 +46,13 @@ $(function(){
 
 
     //ガイドの処理
-    let show = true;
-    counter = 0;
     const $guide = $("#guide");
-    const id = setInterval(function(){
-        show = !show;
-        if(show){
-            $guide.show();
-        }else{
-            $guide.hide();
-        }
-        if(counter++ > 4 && !show){
-            clearInterval(id);
-        }
+    const param = { left: "60%" };
+    const duration = 1000;
+    const easing = "swing";
+    const onanimated = function(){ $guide.hide(); }
+    $guide.show();
+    setTimeout(function(){
+        $guide.animate(param, duration, easing, onanimated);
     }, 500);
 });
